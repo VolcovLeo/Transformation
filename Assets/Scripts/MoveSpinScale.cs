@@ -11,9 +11,7 @@ public class NewBehaviourScript : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector3.forward * _moveSpeed * Time.deltaTime);
-
         transform.Rotate(0f, _rotateSpeed * Time.deltaTime, 0f);
-
         transform.localScale += Vector3.one * _scaleSpeed * Time.deltaTime;
     }
 }
