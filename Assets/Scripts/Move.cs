@@ -8,6 +8,6 @@ public class Move : MonoBehaviour
 
     void Update()
     {
-        transform.position += _movementDirection;
+        transform.position += _movementDirection * Time.deltaTime;
     }
 }
